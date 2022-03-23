@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="PERUBUS"
+             x:Class="prj_prototipo.Vista.Presentacion">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Terminal Terrestre" FontSize="Medium" TextColor="Maroon"
+                HorizontalOptions="CenterAndExpand" />
+
+            
+            <Image Source="soyuz.jpng" WidthRequest="250" HeightRequest="250"/>
+            <Label Text="Central telefónica : 789-6541" FontSize="Medium" TextColor="Maroon"
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="infoperu@soyuz.pe" FontSize="Medium" TextColor="Maroon"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Button Margin="0,40,0,0" x:Name="btnAcceso" Text="Acceso" Clicked="btnAcceso_Clicked" TextColor="Maroon" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
