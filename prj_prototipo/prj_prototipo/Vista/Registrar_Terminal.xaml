@@ -9,7 +9,7 @@
     
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Label Text="Nombre de Terminal " FontSize="Medium"/>
+            <Label Text="Nombre de Terminal Terrestre Prueba" FontSize="Medium"/>
             <Entry x:Name="txtNom" />
             <Label Text="Dirección " FontSize="Medium"/>
             <Entry x:Name="txtDir" />
