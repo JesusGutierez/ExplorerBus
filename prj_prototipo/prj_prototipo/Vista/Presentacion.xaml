@@ -5,7 +5,7 @@
              x:Class="prj_prototipo.Vista.Presentacion">
     <ContentPage.Content>
         <StackLayout Margin="20">
-            <Label Text="Terminal Terrestre" FontSize="Medium" TextColor="Maroon"
+            <Label Text="Terminal Terrestre renzo" FontSize="Medium" TextColor="Maroon"
                 HorizontalOptions="CenterAndExpand" />
 
             
