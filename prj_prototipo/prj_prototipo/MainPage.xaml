@@ -31,6 +31,8 @@
         <Button x:Name="btnMantenimiento" Clicked="btnMantenimiento_Clicked"  Text="Terminales" Margin="10" TextColor="Blue" CornerRadius="10"/>
 
         <Button x:Name="btnPresentación" Clicked="btnPresentación_Clicked"  Text="Presentación" Margin="10" TextColor="Blue" CornerRadius="10"/>
+
+        <Button x:Name="btnNosotros" Clicked="btnNosotros_Clicked"  Text="Nosotros" Margin="10" TextColor="Blue" CornerRadius="10"/>
     </StackLayout>
 
 </ContentPage>

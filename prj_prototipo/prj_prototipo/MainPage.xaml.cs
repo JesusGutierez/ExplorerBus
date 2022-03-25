@@ -43,5 +43,10 @@ namespace prj_prototipo
         {
             await Navigation.PushAsync(new Vista.Listado_Terminales());
         }
+
+        private async void btnNosotros_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vista.nosotros());
+        }
     }
 }
