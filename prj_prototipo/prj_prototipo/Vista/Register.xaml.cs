@@ -10,15 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace prj_prototipo.Vista
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class nosotros : ContentPage
+    public partial class Register : ContentPage
     {
-        public nosotros()
+        public Register()
         {
             InitializeComponent();
-        }
-        private void BarraMenu_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -15,11 +15,13 @@ namespace prj_prototipo
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void toLogin(object sender, EventArgs e)
         {
-            //Llamar a Menu
-            await Navigation.PushAsync(new Menu());
-        
+            await Navigation.PushAsync(new Vista.Login());
+        }
+        private async void toRegister(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vista.Register());
         }
 
         private async void Barra_Clicked(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace prj_prototipo
         private async void btnIntra_Clicked(object sender, EventArgs e)
         {
             //Llamar a Intranet
-            await Navigation.PushAsync(new Vista.Login());
+            await Navigation.PushAsync(new Intranet());
         }
 
         private async void btnPresentación_Clicked(object sender, EventArgs e)
