@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="Terminales"
+             mc:Ignorable="d"
+             x:Class="prj_prototipo.Vista.menu_opciones">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Listado de Terminales" HorizontalOptions="CenterAndExpand" FontSize="Medium"  TextColor="Maroon" />
+
+            <ListView x:Name="list" ItemsSource="{Binding lsterminales}" HasUnevenRows="True" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="25">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" ></RowDefinition>
+                               
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" ></ColumnDefinition>
+                               
+                            </Grid.ColumnDefinitions>
+                                <StackLayout>
+                                    <Label Text="{Binding descrip}" FontSize="Medium" TextColor="Gray" />
+                                    <ImageButton  Source="{Binding foto}" Grid.ColumnSpan="2" CornerRadius="15" />
+
+
+                                </StackLayout>
+                                
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

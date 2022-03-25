@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="SoftViajes"
+             
+             x:Class="prj_prototipo.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Barra" Clicked="Barra_Clicked" Text="Menú" />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Label Text="Gestión de Viajes" TextColor="Blue" FontSize="25" HorizontalTextAlignment="Center"
+               Margin="20"
+               />
+        
+        <Label Text="versión 1.0"
+               FontSize="16" 
+               HorizontalTextAlignment="Center"
+               />
+        
+        <Image Source=""
+               HeightRequest="150"
+               WidthRequest="150"
+               HorizontalOptions="CenterAndExpand"
+               />
+        <Button Text="Ingresar" TextColor="Brown" Clicked="Button_Clicked" Margin="10" CornerRadius="10"/>
+
+        <Button x:Name="btnIntra" Clicked="btnIntra_Clicked" Text="Intranet" Margin="10" TextColor="Blue" CornerRadius="10"/>
+        
+        <Button x:Name="btnMantenimiento" Clicked="btnMantenimiento_Clicked"  Text="Terminales" Margin="10" TextColor="Blue" CornerRadius="10"/>
+
+        <Button x:Name="btnPresentación" Clicked="btnPresentación_Clicked"  Text="Presentación" Margin="10" TextColor="Blue" CornerRadius="10"/>
+
+        <!-- NEW -->
+        <Button x:Name="btnNosotros" Clicked="btnNosotros_Clicked"  Text="Nosotros" Margin="10" TextColor="Blue" CornerRadius="10"/>
+
+
+    </StackLayout>
+
+</ContentPage>
