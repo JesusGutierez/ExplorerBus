@@ -31,7 +31,7 @@ namespace prj_prototipo
         private async void btnIntra_Clicked(object sender, EventArgs e)
         {
             //Llamar a Intranet
-            await Navigation.PushAsync(new Intranet());
+            await Navigation.PushAsync(new Vista.Login());
         }
 
         private async void btnPresentación_Clicked(object sender, EventArgs e)
