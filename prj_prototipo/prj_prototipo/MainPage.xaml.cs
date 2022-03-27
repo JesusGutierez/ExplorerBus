@@ -50,5 +50,10 @@ namespace prj_prototipo
         {
             await Navigation.PushAsync(new Vista.nosotros());
         }
+
+        private async void btnViajes_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Vista.Viajes());
+        }
     }
 }

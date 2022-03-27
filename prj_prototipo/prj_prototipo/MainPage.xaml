@@ -37,6 +37,8 @@
 
             <Button x:Name="btnPresentación" Clicked="btnPresentación_Clicked"  Text="Presentación" Margin="10" TextColor="Blue" CornerRadius="10"/>-->
 
+            <Button x:Name="btnViajes" Clicked="btnViajes_Clicked"  Text="Viajes" Margin="10" TextColor="White" BackgroundColor="#0E165F" CornerRadius="10"/>
+            
             <Button x:Name="btnNosotros" Clicked="btnNosotros_Clicked"  Text="Nosotros" Margin="10" TextColor="White" BackgroundColor="#0E165F" CornerRadius="10"/>
         </StackLayout>
     </ScrollView>
