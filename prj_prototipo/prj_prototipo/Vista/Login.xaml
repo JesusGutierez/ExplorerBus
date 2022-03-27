@@ -19,8 +19,10 @@
                 </Label.FormattedText>
             </Label>
 
-            <Entry Margin="0, 20, 0, 0" Placeholder="Correo electrónico *" Grid.Column="1" Grid.Row="1" IsPassword="True" />
-            <Entry Placeholder="Contraseña *" Grid.Column="1" Grid.Row="1" IsPassword="True" />
+            <!--<Editor Text="Editor is used for collecting text that is expected to take more than one line." BackgroundColor="#2c3e50" HeightRequest="100" x:Name="txtInfo" />-->
+
+            <Entry Margin="0, 20, 0, 0" Placeholder="Correo electrónico *" Grid.Column="1" Grid.Row="1"  x:Name="txtEmail"/>
+            <Entry Placeholder="Contraseña *" Grid.Column="1" Grid.Row="1" IsPassword="True" x:Name="txtPassword" />
 
             <Grid HorizontalOptions="CenterAndExpand">
                 <Grid.RowDefinitions>
@@ -37,7 +39,7 @@
 
             <!-- Layout children in two columns -->
 
-            <Button Text="Iniciar sesión" BackgroundColor="#0E165F" TextColor="White" Margin="0, 30, 0, 5"/>
+            <Button Text="Iniciar sesión" Clicked="Button_Clicked" BackgroundColor="#0E165F" TextColor="White" Margin="0, 30, 0, 5" x:Name="btnLogin"/>
             <Label HorizontalTextAlignment="Center" FontSize="15">
                 <Label.FormattedText>
                     <FormattedString>
