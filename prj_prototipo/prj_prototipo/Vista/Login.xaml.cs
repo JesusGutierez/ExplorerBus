@@ -22,26 +22,39 @@ namespace prj_prototipo.Vista
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            User user = new User
+            UserData user = new UserData
             {
-                Email = txtEmail.Text,
-                Password = txtPassword.Text,
+                email = txtEmail.Text,
+                password = txtPassword.Text,
             };
-            Uri RequestUri = new Uri("https://senativi-8e553-default-rtdb.firebaseio.com/Usuarios/03.json");
+            Uri RequestUri = new Uri("https://senativi-8e553-default-rtdb.firebaseio.com/usuarios.json");
             var client = new HttpClient();
             var json = JsonConvert.SerializeObject(user);
             var contentJson = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await client.GetAsync(RequestUri);
-            
 
+            var jsonParsed = JsonConvert.DeserializeObject<List<UserData>>(response.Content.ReadAsStringAsync().Result);
+            bool has = jsonParsed.Any(cus => cus.email == txtEmail.Text && cus.password == txtPassword.Text);
 
-            if (response.StatusCode == HttpStatusCode.OK)
+            if (response.StatusCode == HttpStatusCode.OK && has)
             {
                 await Navigation.PushAsync(new nosotros());
-                //txtEmail.Text = response.Content.ReadAsStringAsync().Result;
+                //(string.Format("Nombre de usuario: {0}, Correo: {1}", jsonParsed[0].name, jsonParsed[0].email));
             } else
             {
-                await DisplayAlert("Mensaje", "Datos Invalidos", "OK");
+                await DisplayAlert("Datos inválidos", "Porfavor verifique que haya ingresado correctamente el correo o la contraseña.", "OK");
+            }
+        }
+
+        private void switchShowPswrd(object sender, EventArgs e)
+        {
+            if (cbxShowPassword.IsChecked)
+            {
+                txtPassword.IsPassword=false;
+            } 
+            else
+            {
+                txtPassword.IsPassword = true;
             }
         }
     }

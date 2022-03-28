@@ -33,7 +33,7 @@
                     <ColumnDefinition Width="Auto"></ColumnDefinition>
                     <ColumnDefinition Width="0.1*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <CheckBox Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Color="#0E165F"/>
+                <CheckBox Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Color="#0E165F" x:Name="cbxShowPassword" />
                 <Label Grid.Row="2" Grid.Column="2" Text="Mostrar contraseña" VerticalOptions="Center"/>
             </Grid>
 

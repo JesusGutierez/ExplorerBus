@@ -4,9 +4,8 @@ using System.Text;
 
 namespace prj_prototipo.Modelo
 {
-    public class User
+    internal class UserId
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public UserData Data { get; set; }
     }
 }
