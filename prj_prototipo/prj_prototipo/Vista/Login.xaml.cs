@@ -38,7 +38,7 @@ namespace prj_prototipo.Vista
 
             if (response.StatusCode == HttpStatusCode.OK && has)
             {
-                await Navigation.PushAsync(new nosotros());
+                await Navigation.PushAsync(new Viajes());
                 //(string.Format("Nombre de usuario: {0}, Correo: {1}", jsonParsed[0].name, jsonParsed[0].email));
             } else
             {

@@ -5,7 +5,7 @@
              x:Class="prj_prototipo.Vista.Viajes">
     <StackLayout>
 
-        <Label Text="BUS EXPLORER"  HorizontalTextAlignment="Start" TextColor="White" Background="#0E165F" FontSize="24" Padding="9" FontAttributes="Bold"/>
+        <Label Text="Viajes disponibles"  HorizontalTextAlignment="Start" TextColor="White" Background="#0E165F" FontSize="24" Padding="9" FontAttributes="Bold"/>
 
         <ListView ItemsSource="{Binding ListDetails}" BackgroundColor="WhiteSmoke" HasUnevenRows="True">
             <ListView.ItemTemplate>
