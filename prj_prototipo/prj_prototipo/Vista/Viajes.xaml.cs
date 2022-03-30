@@ -20,10 +20,16 @@ namespace prj_prototipo.Vista
             InitializeComponent();
             ListDetails = new ObservableCollection<Card>
             {
-                new Card{ImgIcon="huaral.jpg", Name="Huaral", Description="Destino: Huaral", Description1="Tiempo de viaje : 3 horas", Description2 = "Desde : S/.59"},
-                new Card{ImgIcon="yauyos.jpg", Name="Yauyos", Description="Destino: Yauyos", Description1="Tiempo de viaje : 4 horas", Description2 = "Desde : S/.80"},
-
-
+                new Card{ImgIcon="huaral.jpg",
+                    Name="Huaral",
+                    Description="Destino: Huaral",
+                    Description1="Tiempo de viaje : 3 horas",
+                    Description2 = "Desde : S/.59"},
+                new Card{ImgIcon="yauyos.jpg",
+                    Name="Yauyos",
+                    Description="Destino: Yauyos",
+                    Description1="Tiempo de viaje : 4 horas",
+                    Description2 = "Desde : S/.80"}
             };
             BindingContext = this;
         }

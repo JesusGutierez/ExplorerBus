@@ -35,8 +35,6 @@
                 <Label Grid.Row="2" Grid.Column="2" Text="Mostrar contraseña" VerticalOptions="Center"/>
             </Grid>
 
-            <!-- Layout children in two columns -->
-
             <Button Text="Registrarse" BackgroundColor="#0E165F" TextColor="White" Margin="0, 30, 0, 5"/>
         </StackLayout>
     </ContentPage.Content>

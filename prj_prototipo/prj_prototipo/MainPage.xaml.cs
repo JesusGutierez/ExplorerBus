@@ -29,28 +29,23 @@ namespace prj_prototipo
             //Llamar a Menu
             await Navigation.PushAsync(new Menu());
         }
-
         private async void btnIntra_Clicked(object sender, EventArgs e)
         {
             //Llamar a Intranet
             await Navigation.PushAsync(new Intranet());
         }
-
         private async void btnPresentación_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Vista.Presentacion());
         }
-
         private async void btnMantenimiento_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Vista.Listado_Terminales());
         }
-
         private async void btnNosotros_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Vista.nosotros());
         }
-
         private async void btnViajes_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Vista.Viajes());

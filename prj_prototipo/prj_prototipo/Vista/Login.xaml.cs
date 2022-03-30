@@ -19,7 +19,6 @@ namespace prj_prototipo.Vista
         {
             InitializeComponent();
         }
-
         private async void Button_Clicked(object sender, EventArgs e)
         {
             UserData user = new UserData
@@ -39,7 +38,6 @@ namespace prj_prototipo.Vista
             if (response.StatusCode == HttpStatusCode.OK && has)
             {
                 await Navigation.PushAsync(new Viajes());
-                //(string.Format("Nombre de usuario: {0}, Correo: {1}", jsonParsed[0].name, jsonParsed[0].email));
             } else
             {
                 await DisplayAlert("Datos inválidos", "Porfavor verifique que haya ingresado correctamente el correo o la contraseña.", "OK");
